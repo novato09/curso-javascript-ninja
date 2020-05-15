@@ -7,15 +7,28 @@ um único parâmetro como argumento. Essa função deve retornar `true` se o
 equivalente booleano para o valor passado no argumento for `true`, ou `false`
 para o contrário.
 */
-?
+var isTruthy = function(a) {
+  return !!a;
+  }
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
-?
+isTruthy(null)
+isTruthy(undefined)
+isTruthy(0)
+isTruthy(-0)
+isTruthy('')
+isTruthy(NaN)
+isTruthy(false)
 
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
 */
-?
+isTruthy(1)
+isTruthy(1,b)
+isTruthy(1,'priscila')
+isTruthy(b,10)
+isTruthy('0','')
+isTruthy(0, 0)
 
 /*
 Declare uma variável chamada `carro`, atribuindo à ela um objeto com as
@@ -29,35 +42,54 @@ seguintes propriedades (os valores devem ser do tipo mostrado abaixo):
 - `assentos` - Number - cinco por padrão
 - `quantidadePessoas` - Number - zero por padrão
 */
-?
+var carro {
+marca: 'Fiat',
+placa: 'FHA-6969',
+ano: '2013',
+cor: 'amarelo',
+quantasPortas: '4',
+assentos: '3',
+quantidadePessoa: '0'
+}
 
 /*
 Crie um método chamado `mudarCor` que mude a cor do carro conforme a cor
 passado por parâmetro.
 */
-?
+car.Mudarcor = function(cor) {
+  car.cor = cor;
+}
+car.Mudacor('verde');
 
 /*
 Crie um método chamado `obterCor`, que retorne a cor do carro.
 */
-?
+car.obterCor = function() {
+  return car.cor;
+}
 
 /*
 Crie um método chamado `obterModelo` que retorne o modelo do carro.
 */
-?
+car.obterModelo = function(){
+  return car.modelo;
+}
 
 /*
 Crie um método chamado `obterMarca` que retorne a marca do carro.
 */
-?
+car.obterMarca = function(){
+  return car.marca;
+}
 
 /*
 Crie um método chamado `obterMarcaModelo`, que retorne:
 "Esse carro é um [MARCA] [MODELO]"
 Para retornar os valores de marca e modelo, utilize os métodos criados.
 */
-?
+car.obterMarcaModelo = function() {
+  return 'Este carro é um' + ' ' + car.marca + ' ' + car.modelo;
+  }
 
 /*
 Crie um método que irá adicionar pessoas no carro. Esse método terá as
@@ -75,7 +107,7 @@ mostrar quantos assentos ainda podem ser ocupados, com a frase:
 - Se couber somente mais uma pessoa, mostrar a palavra "pessoa" no retorno
 citado acima, no lugar de "pessoas".
 */
-?
+
 
 /*
 Agora vamos verificar algumas informações do carro. Para as respostas abaixo,
